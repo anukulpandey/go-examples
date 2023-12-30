@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	var a = math.Max(12.3, 124.3)
-	const x = 100_100 // for easy reading
-	fmt.Println(a, x)
+	var a = math.Sin(math.Pi / 2)
+	fmt.Println(a)
 }
