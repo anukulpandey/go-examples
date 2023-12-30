@@ -2,17 +2,11 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	t := time.Now().Year()
-	fmt.Println("year:", t)
-
-	switch t {
-	case 2023:
-		fmt.Println("year is 2023")
-	default:
-		fmt.Println("invalid year")
-	}
+	a := [5]int{1, 2, 3, 4, 5}
+	fmt.Println(a)
+	var twoDarr [2][3]int
+	fmt.Println(twoDarr)
 }
