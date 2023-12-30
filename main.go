@@ -2,22 +2,17 @@ package main
 
 import (
 	"fmt"
+	"time"
 )
 
 func main() {
-	const condition = 9 % 2
-	if condition == 0 {
-		fmt.Println("divisible")
-	} else {
-		fmt.Println("not divisible")
-	}
+	t := time.Now().Year()
+	fmt.Println("year:", t)
 
-	// in single line
-	// if statement ; condition
-	if condition := 9 % 2; condition == 0 {
-		fmt.Println("divisible")
-	} else {
-		fmt.Println("not divisible")
+	switch t {
+	case 2023:
+		fmt.Println("year is 2023")
+	default:
+		fmt.Println("invalid year")
 	}
-
 }
