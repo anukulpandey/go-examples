@@ -5,26 +5,19 @@ import (
 )
 
 func main() {
-	// basic loop
-	i := 0
-	for i < 3 {
-		fmt.Println(i)
-		i++
+	const condition = 9 % 2
+	if condition == 0 {
+		fmt.Println("divisible")
+	} else {
+		fmt.Println("not divisible")
 	}
-	// conventional for loop
-	for j := 0; j < 3; j += 1 {
-		fmt.Println(j)
+
+	// in single line
+	// if statement ; condition
+	if condition := 9 % 2; condition == 0 {
+		fmt.Println("divisible")
+	} else {
+		fmt.Println("not divisible")
 	}
-	// for without condition
-	for {
-		fmt.Println("anukul")
-		break
-	}
-	// continue
-	for n := 0; n <= 5; n++ {
-		if n%2 == 0 {
-			continue //skips the next code blocks
-		}
-		fmt.Println(n)
-	}
+
 }
