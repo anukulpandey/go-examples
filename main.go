@@ -3,8 +3,8 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("hello" + "world")
-	fmt.Println(1 + 1)
-	fmt.Println(1.2 + 2)
-	fmt.Println(true && false)
+	var a string = "anukul"
+	var b, c int = 1, 2
+	d := "hello world"
+	fmt.Println(a, b, c, d)
 }
