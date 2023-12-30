@@ -1,10 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math"
+)
 
 func main() {
-	var a string = "anukul"
-	var b, c int = 1, 2
-	d := "hello world"
-	fmt.Println(a, b, c, d)
+	var a = math.Max(12.3, 124.3)
+	const x = 100_100 // for easy reading
+	fmt.Println(a, x)
 }
